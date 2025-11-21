@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZz de Matemática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container p-5">
+    <div id="header" class="p-5">
+        <h1>QUIZ de Matemática</h1>
+        
+        <h3>Realize operações matemáticas para treinar suas habilidades!</h3>
+        <h4><button onclick="onof()">alternar entre modo claro e escuro</button></h4>
+        <div id="sodofundo"></div>
+
+        
+    </div>
+    <div id="main" class="p-5">
+        <h5>Questão 1: DIVISÃO,</h5>
+        <h6>Quantp é 44 dividido por 0,5?</h6>
+        <p></p>
+        <input type="radio" name="q1" value="22">22
+        <p></p>
+        <input type="radio" name="q1" value="66">66
+        <p></p>
+        <input type="radio" name="q1" value="88" id="certa1">88
+        <p></p>
+        <input type="radio" name="q1" value="nulo">Não se pode dividir por 0 ou entre 0 e 1
+        <p></p>
+        <button onclick="resposta1()">Enviar</button>
+        <div id="result1"></div>
+
+        <h5>Questão 2: Verdadeiro ou falso</h5>
+        <h6>I. x elevado a meio é igual a raiz de x</h6>
+        <h6>II se o delta da fórmula de bhaskara resultar em 0 a equação so tem um ponto em q o y é 0.</h6>
+        <h6>III desconsiderando numeros imaginarios, existem numeros que quando elevados a 2 que resultam em numeros negativos</h6>
+        <h5>Quais estão certas?</h6>
+        <p></p>
+        <input type="checkbox" value="I" id="c5">I
+        <p></p>
+        <input type="checkbox" value="II" id="c9">II
+        <p></p>
+        <input type="checkbox" value="III" id="c7">III
+        <p></p>
+        <button onclick="resposta2()">Enviar</button>
+        <div id="result2"></div>
+
+
+
+
+
+        <button onclick="final()">Enviar Final</button>
+        <div id="final"></div>
+        <div id="parabe"></div>
+        
+    </div>
+    <div id="section" class="p-5">
+        <h4>Partes:</h4>
+        <a href="#header">Início</a>
+        <p></p>
+        <a href="#main">Quiz</a>
+        <p></p>
+        <a href="#section">Seção</a>
+        <p></p>
+        <a href="#footer">Final</a>
+    </div>
+    <div id="footer" class="p-5">
+        <a href="https://github.com/Igorggimenes/programas-escritos/">Minha pagina do github.</a>
+        <h6>QUIZz de Matemática. Feito inteiramente por Igor Gimenes, todos os direitos resvervados.</h6>
+    </div>
+    </div>
+</body>
+<script src="js/code.js"></script>
+</html>
